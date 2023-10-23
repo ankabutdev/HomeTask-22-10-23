@@ -27,6 +27,8 @@ public class Program
 
         result1.ForEach(x => Console.WriteLine(x + " "));
 
+        Console.WriteLine("--------------------------------------------------------------");
+
         // 2 Task
         var result2 = (from x in list
                        where x > 0
@@ -34,6 +36,8 @@ public class Program
                        select x).ToList();
 
         result2.ForEach(x => Console.WriteLine(x + " "));
+
+        Console.WriteLine("--------------------------------------------------------------");
 
         // Task 3
         var result3 = (from int num in list
@@ -43,6 +47,8 @@ public class Program
 
         result3.ForEach(x => Console.WriteLine(x + " "));
 
+        Console.WriteLine("--------------------------------------------------------------");
+
         // Task 4
         var result4 = (from x in list
                        group x by x into y
@@ -50,6 +56,8 @@ public class Program
 
         result4.ForEach(x =>
                 Console.WriteLine("Num: {0} Count: {1}", x.Key, x.Count()));
+
+        Console.WriteLine("--------------------------------------------------------------");
 
         // Task 5
         string str = Console.ReadLine()!;
@@ -60,11 +68,15 @@ public class Program
 
         result5.ForEach(x => Console.WriteLine("Char: {0} Count: {1}", x.Key, x.Count()));
 
+        Console.WriteLine("--------------------------------------------------------------");
+
         // Task 6
         var result6 = (from x in dayWeek
                        select x).ToList();
 
         result6.ForEach(x => Console.WriteLine(x));
+
+        Console.WriteLine("--------------------------------------------------------------");
 
         // Task 7
         var result7 = (from x in list
@@ -73,6 +85,8 @@ public class Program
 
         result7.ForEach(x => Console.WriteLine("Num: {0}\t Sum: {1}\t Count: {2}",
             x.Key, x.Sum(), x.Count()));
+
+        Console.WriteLine("--------------------------------------------------------------");
 
         // Task 8
         Console.Write("Start: ");
@@ -87,6 +101,8 @@ public class Program
 
         result8.ForEach(x => Console.WriteLine("StartCh: {0} EndCh: {1} Result: {2}", startChar, endChar, x));
 
+        Console.WriteLine("--------------------------------------------------------------");
+
         //  Task 9
         var result9 = list.Where(x => x > 80).ToList();
 
@@ -95,6 +111,8 @@ public class Program
                         select x).ToList();
 
         result9.ForEach(x => Console.WriteLine(x + " "));
+
+        Console.WriteLine("--------------------------------------------------------------");
 
         // Task 10
         Console.Write("Nechta son kiritmoqchisiz: ");
@@ -115,5 +133,7 @@ public class Program
         var _result10 = demolist.FindAll(x => x > m ? true : false);
 
         result10.ForEach(x => Console.WriteLine(x));
+
+        Console.WriteLine("--------------------------------------------------------------");
     }
 }
