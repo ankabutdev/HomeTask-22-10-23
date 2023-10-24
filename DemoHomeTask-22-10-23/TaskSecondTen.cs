@@ -61,6 +61,26 @@ public class TaskSecondTen
         //Console.WriteLine(tempList);
 
         // Task 14
+        //Students stu = new Students();
+
+        //Console.Write("Nechinchi o'rinni topmoqchisiz: ");
+        //int point = int.Parse(Console.ReadLine()!);
+
+        //var students = stu.GetAllStudents();
+
+        //var result = (from x in students
+        //              group x by x.GrPoint into g
+        //              orderby g.Key descending
+        //              select new
+        //              {
+        //                  StudentRecord = g.ToList()
+        //              }).ToList();
+
+        //result[point - 1].StudentRecord
+        //    .ForEach(i => Console.WriteLine(" Id : {0},  Name : {1},  achieved Grade Point : {2}",
+        //    i.StuId, i.StuName, i.GrPoint));
+
+        // Task 15
 
 
 
