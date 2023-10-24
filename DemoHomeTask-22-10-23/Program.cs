@@ -8,6 +8,6 @@ public class Program
         //TaskFirstTen.Run();
 
         // 10 - 20 Tasks
-
+        TaskSecondTen.Run();
     }
 }
