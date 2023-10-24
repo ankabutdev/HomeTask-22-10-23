@@ -9,6 +9,10 @@ public class TaskSecondTen
                                             0, 1, 2, 3, -3, 4, 5, 6, 7, 8, 9, 10 ,
                                                4, 5, 6, 4, 3, 4, 5, 6,
                                                 55, 200, 740, 76, 230, 482, 95};
+
+        string[] arr1 = { "aaa.frx", "bbb.TXT", "xyz.dbf", "abc.pdf",
+                            "aaaa.PDF", "xyz.frt", "abc.xml", "ccc.txt", "zzz.txt" };
+
         // Task 11
         //foreach (var lstnum in list)
         //{
@@ -68,7 +72,7 @@ public class TaskSecondTen
 
         //var students = stu.GetAllStudents();
 
-        //var result = (from x in students
+        //var result14 = (from x in students
         //              group x by x.GrPoint into g
         //              orderby g.Key descending
         //              select new
@@ -76,11 +80,24 @@ public class TaskSecondTen
         //                  StudentRecord = g.ToList()
         //              }).ToList();
 
-        //result[point - 1].StudentRecord
+        //result14[point - 1].StudentRecord
         //    .ForEach(i => Console.WriteLine(" Id : {0},  Name : {1},  achieved Grade Point : {2}",
         //    i.StuId, i.StuName, i.GrPoint));
 
         // Task 15
+        //var result15 = arr1.Select(x => Path.GetExtension(x).TrimStart('.').ToLower())
+        //    .GroupBy(y => y, (fExt, extCtr) => new
+        //    {
+        //        Extension = fExt,
+        //        Count = extCtr.Count(),
+        //    });
+
+        //foreach (var item in result15)
+        //{
+        //    Console.WriteLine("{0} file: Extension: [{1}]", item.Count, item.Extension);
+        //}
+
+        // Task 16
 
 
 
