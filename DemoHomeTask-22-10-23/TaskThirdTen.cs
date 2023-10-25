@@ -143,6 +143,32 @@ public class TaskThirdTen
         //result26.ForEach(x => Console.WriteLine("{0}\t{1}\t{2}", x.ItId, x.ItDes, x.prQty));
 
         // Task 27
+        //itemlist.ForEach(x => Console.WriteLine("Item Id: {0}, Description: {1}",
+        //x.ItemId, x.ItemDes));
+
+        //Console.WriteLine("-----------------------------------");
+
+        //purchlist.ForEach(x => Console.WriteLine("Invoice No: {0}, Item Id : {1},  Quantity : {2}",
+        //    x.InvNo, x.ItemId, x.PurQty));
+
+        //Console.WriteLine();
+
+        //var result27 = (from x in purchlist
+        //                join y in itemlist
+        //                on x.ItemId equals y.ItemId
+        //                into a
+        //                from b in a.DefaultIfEmpty()
+        //                select new
+        //                {
+        //                    ItId = b.ItemId,
+        //                    ItDes = b.ItemDes,
+        //                    Qty = x.PurQty
+        //                }).ToList();
+
+        //result27.ForEach(x => Console.WriteLine("{0}\t{1}\t{2}",
+        //    x.ItId, x.ItDes, x.Qty));
+
+        // Task 28
 
 
     }
