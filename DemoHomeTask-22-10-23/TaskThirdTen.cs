@@ -95,38 +95,54 @@ public class TaskThirdTen
         ////_result24.ForEach(x => Console.WriteLine(x + " "));
 
         // Task 25
+        //itemlist.ForEach(x => Console.WriteLine("Item Id: {0}, Description: {1}",
+        //    x.ItemId, x.ItemDes));
 
-        foreach (var item in itemlist)
-        {
-            Console.WriteLine(
-            "Item Id: {0}, Description: {1}",
-            item.ItemId,
-            item.ItemDes);
-        }
-        Console.WriteLine("--------------------------------");
-        foreach (var item in purchlist)
-        {
-            Console.WriteLine(
-            "Invoice No: {0}, Item Id : {1},  Quantity : {2}",
-            item.InvNo,
-            item.ItemId,
-            item.PurQty);
-        }
+        //Console.WriteLine("-----------------------------------");
 
-        Console.WriteLine("-----------------------------------");
+        //purchlist.ForEach(x => Console.WriteLine("Invoice No: {0}, Item Id : {1},  Quantity : {2}",
+        //    x.InvNo, x.ItemId, x.PurQty));
 
-        var result25 = (from x in itemlist
-                        join y in purchlist
-                        on x.ItemId equals y.ItemId
-                        select new
-                        {
-                            itId = x.ItemId,
-                            itDes = x.ItemDes,
-                            prQty = y.PurQty
-                        }).ToList();
+        //Console.WriteLine("-----------------------------------");
 
-        result25.ForEach(x => Console.WriteLine("{0}\t{1}\t{2}", x.itId, x.itDes, x.prQty));
+        //var result25 = (from x in itemlist
+        //                join y in purchlist
+        //                on x.ItemId equals y.ItemId
+        //                select new
+        //                {
+        //                    itId = x.ItemId,
+        //                    itDes = x.ItemDes,
+        //                    prQty = y.PurQty
+        //                }).ToList();
 
+        //result25.ForEach(x => Console.WriteLine("{0}\t{1}\t{2}", x.itId, x.itDes, x.prQty));
+
+        // Task 26
+        //itemlist.ForEach(x => Console.WriteLine("Item Id: {0}, Description: {1}",
+        //x.ItemId, x.ItemDes));
+
+        //Console.WriteLine("-----------------------------------");
+
+        //purchlist.ForEach(x => Console.WriteLine("Invoice No: {0}, Item Id : {1},  Quantity : {2}",
+        //    x.InvNo, x.ItemId, x.PurQty));
+
+        //Console.WriteLine("-----------------------------------");
+
+        //var result26 = (from item in itemlist
+        //                join purch in purchlist
+        //                on item.ItemId equals purch.ItemId
+        //                into a
+        //                from x in a.DefaultIfEmpty(new Purchase())
+        //                select new
+        //                {
+        //                    ItId = item.ItemId,
+        //                    ItDes = item.ItemDes,
+        //                    prQty = x.PurQty
+        //                }).ToList();
+
+        //result26.ForEach(x => Console.WriteLine("{0}\t{1}\t{2}", x.ItId, x.ItDes, x.prQty));
+
+        // Task 27
 
 
     }
