@@ -10,8 +10,12 @@ public class TaskSecondTen
                                                4, 5, 6, 4, 3, 4, 5, 6,
                                                 55, 200, 740, 76, 230, 482, 95};
 
+        List<string> listChars = new List<string>() { "a", "q", "o", "a", "f", "s" };
+
         string[] arr1 = { "aaa.frx", "bbb.TXT", "xyz.dbf", "abc.pdf",
                             "aaaa.PDF", "xyz.frt", "abc.xml", "ccc.txt", "zzz.txt" };
+
+        string[] dirFile = Directory.GetFiles("C:\\Users\\iddiu\\OneDrive\\Изображения\\Снимки экрана");
 
         // Task 11
         //foreach (var lstnum in list)
@@ -98,8 +102,53 @@ public class TaskSecondTen
         //}
 
         // Task 16
+        //var result16 = dirFile.Select(file => new FileInfo(file).Length).Average();
+        //result16 = Math.Round(result16 / 10, 1);
+        //Console.WriteLine("The Average file size is {0} MB", result16);
 
+        // Task 17
 
+        //listChars.ForEach(x => Console.Write(x + " "));
 
+        //Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
+        //string nstr = Console.ReadLine()!;
+
+        //var result17 = listChars.FirstOrDefault(y => y == nstr);
+        //listChars.Remove(result17!);
+
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        // Task 18
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        //Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
+        //string nstr = Console.ReadLine()!;
+
+        //var result17 = listChars.FirstOrDefault(y => y == nstr);
+        //listChars.Remove(result17!);
+
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        // Task 19
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        //Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
+        //string nstr = Console.ReadLine()!;
+
+        //var result17 = listChars.FirstOrDefault(y => y == nstr);
+        //listChars.Remove(result17!);
+
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        // Task 20
+        //listChars.ForEach(x => Console.Write(x + " "));
+
+        //Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
+        //string nstr = Console.ReadLine()!;
+
+        //var result17 = listChars.FirstOrDefault(y => y == nstr);
+        //listChars.Remove(result17!);
+
+        //listChars.ForEach(x => Console.Write(x + " "));
     }
 }
