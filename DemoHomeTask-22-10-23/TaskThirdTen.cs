@@ -191,19 +191,24 @@ public class TaskThirdTen
         //result28.ForEach(x => Console.WriteLine(x + " "));
 
         // Task 29
-        foreach (var item in cities2)
-            Console.WriteLine(item);
+        //foreach (var item in cities2)
+        //    Console.WriteLine(item);
 
-        Console.WriteLine("----------------------------------------------");
+        //Console.WriteLine("----------------------------------------------");
 
-        var result29 = (from x in Enumerable.Range(0, cities2.Length)
-                        group cities2[x] by x / 3).ToList();
+        //var result29 = (from x in Enumerable.Range(0, cities2.Length)
+        //                group cities2[x] by x / 3).ToList();
 
-        result29.ForEach(x =>
-            Console.WriteLine(string.Join("; ", x.ToArray()) + '\n'));
+        //result29.ForEach(x =>
+        //    Console.WriteLine(string.Join("; ", x.ToArray()) + '\n'));
 
         // Task 30
+        var result30 = (from x in ItemMast.GetItemMast()
+                        select x.ItemDes)
+                        .Distinct()
+                        .OrderBy(x => x).ToList();
 
+        result30.ForEach(x => Console.WriteLine(x + " "));
     }
 }
 
@@ -211,6 +216,18 @@ public class ItemMast
 {
     public int ItemId { get; set; }
     public string ItemDes { get; set; }
+
+    public static List<ItemMast> GetItemMast()
+    {
+        List<ItemMast> itemlist = new List<ItemMast>();
+        itemlist.Add(new ItemMast() { ItemId = 1, ItemDes = "Biscuit  " });
+        itemlist.Add(new ItemMast() { ItemId = 2, ItemDes = "Honey    " });
+        itemlist.Add(new ItemMast() { ItemId = 3, ItemDes = "Butter   " });
+        itemlist.Add(new ItemMast() { ItemId = 4, ItemDes = "Brade    " });
+        itemlist.Add(new ItemMast() { ItemId = 5, ItemDes = "Honey    " });
+        itemlist.Add(new ItemMast() { ItemId = 6, ItemDes = "Biscuit  " });
+        return itemlist;
+    }
 }
 
 public class Purchase
