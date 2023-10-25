@@ -123,8 +123,7 @@ public class TaskSecondTen
         Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
         string nstr18 = Console.ReadLine()!;
 
-        var result18 = listChars.FirstOrDefault(y => y == nstr18);
-        listChars.Remove(result18!);
+        listChars.Remove(listChars.FirstOrDefault(x => x == nstr18)!);
 
         listChars.ForEach(x => Console.Write(x + " "));
 
@@ -134,19 +133,17 @@ public class TaskSecondTen
         Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
         string nstr19 = Console.ReadLine()!;
 
-        var result19 = listChars.FirstOrDefault(y => y == nstr19);
-        listChars.Remove(result17!);
+        listChars.RemoveAll(x => x == nstr19);
 
         listChars.ForEach(x => Console.Write(x + " "));
 
         // Task 20
         listChars.ForEach(x => Console.Write(x + " "));
 
-        Console.Write("\n\nQaysi harfni o'chirib tashlamoqchisiz: ");
-        string nstr20 = Console.ReadLine()!;
+        Console.Write("\n\nQaysi indexni o'chirib tashlamoqchisiz: ");
+        int nstr20 = int.Parse(Console.ReadLine()!);
 
-        var result20 = listChars.FirstOrDefault(y => y == nstr20);
-        listChars.Remove(result20!);
+        listChars.RemoveAt(nstr20!);
 
         listChars.ForEach(x => Console.Write(x + " "));
     }
