@@ -92,6 +92,7 @@ public static class TaskFirstTen
         // Task 8
         Console.Write("Start: ");
         string startChar = Console.ReadLine()!;
+
         Console.Write("End: ");
         string endChar = Console.ReadLine()!;
 
