@@ -38,6 +38,13 @@ public class TaskThirdTen
             "NEW DELHI", "AMSTERDAM", "ABU DHABI", "PARIS"
         };
 
+        string[] cities2 =
+            {
+                "ROME","LONDON","NAIROBI","CALIFORNIA",
+                "ZURICH","NEW DELHI","AMSTERDAM",
+                "ABU DHABI", "PARIS","NEW YORK"
+            };
+
         // Task 21
         //listChars.ForEach(x => Console.Write(x + " "));
 
@@ -184,6 +191,18 @@ public class TaskThirdTen
         //result28.ForEach(x => Console.WriteLine(x + " "));
 
         // Task 29
+        foreach (var item in cities2)
+            Console.WriteLine(item);
+
+        Console.WriteLine("----------------------------------------------");
+
+        var result29 = (from x in Enumerable.Range(0, cities2.Length)
+                        group cities2[x] by x / 3).ToList();
+
+        result29.ForEach(x =>
+            Console.WriteLine(string.Join("; ", x.ToArray()) + '\n'));
+
+        // Task 30
 
     }
 }
