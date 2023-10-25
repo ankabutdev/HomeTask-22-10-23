@@ -6,9 +6,11 @@ public class TaskThirdTen
     {
         List<string> listChars = new List<string>() { "a", "q", "o", "a", "f", "s" };
 
-        char[] charset1 = { 'X', 'Y', 'Z' };
+        char[] charset1 = { 'X', 'Y', 'Z', 'W' };
 
         int[] numset1 = { 1, 2, 3, 4 };
+
+        string[] colorset1 = { "Green", "Orange", "Yellow", "Pink" };
 
         // Task 21
         //listChars.ForEach(x => Console.Write(x + " "));
@@ -49,6 +51,32 @@ public class TaskThirdTen
         //result23.ForEach(x => Console.WriteLine(x + " "));
 
         // Task 24
+        //var result24 = (from letter in charset1
+        //                from number in numset1
+        //                from color in colorset1
+        //                select new { letter, number, color }).ToList();
+
+        //var _result24 = charset1
+        //    .SelectMany(letterList => numset1.Select(numList =>
+        //    new
+        //    {
+        //        letterList,
+        //        numList
+        //    }))
+        //    .SelectMany((set1and2) => colorset1.Select(colorList =>
+        //    new
+        //    {
+        //        set1and2.letterList,
+        //        set1and2.numList,
+        //        colorList
+        //    })).ToList();
+
+        //result24.ForEach(x => Console.WriteLine(x + " "));
+        ////_result24.ForEach(x => Console.WriteLine(x + " "));
+
+        // Task 25
+
+
 
 
 
