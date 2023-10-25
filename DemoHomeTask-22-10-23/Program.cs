@@ -5,10 +5,10 @@ public class Program
     public static void Main(string[] args)
     {
         // 1 - 10 Tasks
-        //TaskFirstTen.Run();
+        TaskFirstTen.Run();
 
         // 10 - 20 Tasks
-        //TaskSecondTen.Run();
+        TaskSecondTen.Run();
 
         // 20 - 30
         TaskThirdTen.Run();

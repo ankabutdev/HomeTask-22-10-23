@@ -60,6 +60,7 @@ public static class TaskFirstTen
         Console.WriteLine("--------------------------------------------------------------");
 
         // Task 5
+        Console.Write("String kiriting: ");
         string str = Console.ReadLine()!;
 
         var result5 = (from x in str
