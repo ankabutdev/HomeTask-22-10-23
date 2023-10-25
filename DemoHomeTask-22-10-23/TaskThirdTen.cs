@@ -32,6 +32,12 @@ public class TaskThirdTen
             new Purchase { InvNo=106, ItemId = 1,  PurQty = 458 }
         };
 
+        string[] cities =
+        {
+            "ROME", "LONDON", "NAIROBI", "CALIFORNIA", "ZURICH",
+            "NEW DELHI", "AMSTERDAM", "ABU DHABI", "PARIS"
+        };
+
         // Task 21
         //listChars.ForEach(x => Console.Write(x + " "));
 
@@ -169,7 +175,15 @@ public class TaskThirdTen
         //    x.ItId, x.ItDes, x.Qty));
 
         // Task 28
+        //foreach (var item in cities)
+        //    Console.WriteLine(item + " ");
 
+        //Console.WriteLine("--------------------------------------------");
+
+        //var result28 = cities.OrderBy(x => x.Length).ThenBy(y => y).ToList();
+        //result28.ForEach(x => Console.WriteLine(x + " "));
+
+        // Task 29
 
     }
 }
